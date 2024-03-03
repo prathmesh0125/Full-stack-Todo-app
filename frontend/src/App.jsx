@@ -5,10 +5,10 @@ import Todo from "./components/Todo";
 
 function App() {
   const [todos, setTodos] = useState([]);
-    fetch("http://localhost:3000/todos").then(async function(res){
-    const data= await res.json();
-    setTodos(data.todos)
-  })
+    // fetch("http://localhost:3000/todos").then(async function(res){
+    // const data= await res.json();
+    // setTodos(data.todos)
+  // })
   return (
     <>
       <CreateTodo />
